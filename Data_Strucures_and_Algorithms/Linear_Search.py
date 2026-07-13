@@ -1,4 +1,4 @@
-def liner_search(list, target):
+def linear_search(list, target):
     """
     Return the index of the target if found else returns None
     """
@@ -7,8 +7,7 @@ def liner_search(list, target):
     for i in range(0, len(list)):
         if list[i] == target:
             return i
-        else:
-            return None
+    return None
         
 
 def verify(index):
@@ -19,5 +18,8 @@ def verify(index):
         
 number = [1,2,3,4,5,6,7,8,9,10]
 
-result = liner_search(number, 12)
+result = linear_search(number, 12)
+verify(result)
+
+result = linear_search(number, 6)
 verify(result)

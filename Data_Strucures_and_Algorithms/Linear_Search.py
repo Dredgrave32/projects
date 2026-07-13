@@ -9,3 +9,15 @@ def liner_search(list, target):
             return i
         else:
             return None
+        
+
+def verify(index):
+    if  index is not None:
+        print("Target found at index: ", index)
+    else:
+        print("Target not found in List")
+        
+number = [1,2,3,4,5,6,7,8,9,10]
+
+result = liner_search(number, 12)
+verify(result)
